@@ -10,8 +10,6 @@ stages{
 
 stage('SCM veryfing'){
 echo 'Hello World!'
-
-git 'https://github.com/albert011111/ContactsBook-App'
 }
 
 stage('MVN compile')
