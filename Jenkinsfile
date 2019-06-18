@@ -2,13 +2,14 @@ pipeline {
         agent any
         tools {
             jdk 'java8'
-           // maven 'Maven 3.3.9'
+            maven 'maven_3_6_1'
         }
 
     stages{
             stage('ECHO stage'){
-                    steps{
+                    steps{                  
                     echo 'stage ECHO'
+                    sh 'mvn clean compile'
                     }
             }
             
