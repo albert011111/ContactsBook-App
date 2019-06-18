@@ -6,10 +6,17 @@ pipeline {
         }
 
     stages{
+            stage('ECHO stage'){
+                    steps{
+                    echo 'stage ECHO'
+                    }
+            }
+            
         stage('SCM veryfing'){
             steps{
-                    git 'https://github.com/albert011111/ContactsBook-App'
                     echo 'stage SCM'
+                    git 'https://github.com/albert011111/ContactsBook-App'
+                   
             }
         }
 
