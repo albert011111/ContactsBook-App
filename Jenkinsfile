@@ -7,6 +7,7 @@ node {
 
     stages{
         stage('SCM veryfing'){
+            git 'https://github.com/albert011111/ContactsBook-App'
             echo 'stage SCM'
         }
 
