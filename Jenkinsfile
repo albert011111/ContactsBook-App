@@ -9,7 +9,7 @@ pipeline {
             stage('ECHO stage'){
                     steps{                  
                     echo 'stage ECHO'
-                    sh 'mvn clean compile'
+                    
                     }
             }
             
@@ -23,7 +23,7 @@ pipeline {
             steps{
                     echo 'stage SCM'
                     git 'https://github.com/albert011111/ContactsBook-App'
-                   
+                   sh 'mvn clean compile'
             }
         }
 
