@@ -12,6 +12,12 @@ pipeline {
                     }
             }
             
+                    stage('MVN compile'){
+                steps{
+                        echo 'stage MVN'
+                 }
+        }
+            
         stage('SCM veryfing'){
             steps{
                     echo 'stage SCM'
@@ -20,10 +26,6 @@ pipeline {
             }
         }
 
-        stage('MVN compile'){
-                steps{
-                        echo 'stage MVN'
-                 }
-        }
+
     }
 }
