@@ -7,12 +7,16 @@ pipeline {
 
     stages{
         stage('SCM veryfing'){
-            git 'https://github.com/albert011111/ContactsBook-App'
-            echo 'stage SCM'
+            steps{
+                    git 'https://github.com/albert011111/ContactsBook-App'
+                    echo 'stage SCM'
+            }
         }
 
         stage('MVN compile'){
-            echo 'stage MVN'
+                steps{
+                        echo 'stage MVN'
+                 }
         }
     }
 }
