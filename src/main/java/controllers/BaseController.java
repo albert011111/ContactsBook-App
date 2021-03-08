@@ -5,4 +5,6 @@ interface BaseController {
 
 	/*testmaster1*/
 
+	/*testmaster2*/
+
 }
